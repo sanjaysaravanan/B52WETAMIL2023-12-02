@@ -1,0 +1,85 @@
+
+Topics:
+
+  DOM -> Document Object Model
+
+  2. Document --> HTML file
+
+     DOM --> Document Object Model ( Tree )
+     HTML
+      | ---> HEAD ---> Site Information
+              | ---> META, TITLE 
+      | ---> BODY ---> Site Interface
+              | ---> P, A, DIV, H1
+
+    with the help of document object we can manipualte the content in a website
+
+    DOM Element - element/node/tag
+
+    DOM Manipulation script should follow the following,
+      1. Should be the last child of the body
+                      or
+      2. using defer attribute in the script added in head tag
+        if defer is used parser will not execute the js untill the DOM is completely rendered
+
+  3. createElement --> 
+      Create Node/Tag/HTMLElement by passing string tagName
+      eg: document.createElement('h1') --> creates h1 element which can be used in the JS
+  
+      setAttribute:
+        set an attribute to element/node/tag eg: <element>.setAttribute( 'src', 'https://some.com/image.jpg' );
+  
+  4. appendChild vs append
+
+    appendChild ---> takes only one element as an arguement and adds that as child to the calling tag and returns the appended tag/element
+
+    append ---> takes one/more elements/string as arguments and adds all the arguments as child to the calling tag and returns nothing (undefined)
+
+  
+  4. innerHTML vs innerText ( attributes of a element or node or tag )
+
+    innerHTML --> renders the string value by marking up any tags in string
+    innerText --> renders only the string value without any marking up
+
+  5. style:
+      set any style prop value <element>.style.backgroundColor ( camelCase )
+      <element>.style.borderRadius = '10px';
+
+      using class or id
+  
+  6. classlist:
+      classlist is list of class names added, removed or toggled using
+
+        add
+        remove
+        toggle
+
+  7. Node/Element/Tag Selection:
+      getElementById - Returns a reference to the first object with the specified value of the ID attribute
+
+      getElementsByClassName - Returns a HTMLCollection of the elements in the object on which the method was invoked (a document or an element) that have all the classes given by classNames. The classNames argument is interpreted as a space-separated list of classes.
+
+
+      using CSS Selector
+      querySelector ---> Returns the first element that is a descendant of node that matches selectors
+      querySelectorAll --> Returns all element descendants of node that match selectors
+
+Task:
+
+  Create sample HTML documents with DOM manipualting JS
+
+Netlify:
+  1. Go to https://netlify.com 
+  2. Sign Up with Google or any preffered way
+  3. Add New Site,
+    1. Import Project from Git
+        1. authenticate with github
+        2. Select repo by filtering
+        3. Deploy Site ( No Changes in the inputs )
+    2. Deploy Mannually,
+  4. Now properly navigate to the url( netlify Url ) by lookgin at the folders of Your code
+  5. Copy the url
+
+
+  Now submit the netlify url in **FE Deployed URL** field in task submission form
+
