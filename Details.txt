@@ -77,9 +77,12 @@ Netlify:
         2. Select repo by filtering
         3. Deploy Site ( No Changes in the inputs )
     2. Deploy Mannually,
+      Selec the folder with the source files (HTML, CSS, JavaScript)
   4. Now properly navigate to the url( netlify Url ) by lookgin at the folders of Your code
   5. Copy the url
 
 
   Now submit the netlify url in **FE Deployed URL** field in task submission form
 
+
+  ***Please do Let me know if You face any trouble in submitting the netlify url***
